@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'First time Build using jenkins file.'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing after building..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying after building and testing....'
             }
         }
     }
